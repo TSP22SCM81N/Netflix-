@@ -2,7 +2,6 @@ import data as data
 from crud import ShowsDBCRUD
 from flask import jsonify
 
-
 class ShowsData:
     def __init__(self):
         self.db = ShowsDBCRUD()
@@ -73,5 +72,3 @@ class ShowsData:
         data = self.db.delete_show_by_id(show_id)
         data = jsonify(data)
         return data
-
-   

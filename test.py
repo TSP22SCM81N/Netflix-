@@ -1,7 +1,6 @@
 import requests
 import unittest
 
-
 class TestNetflixShowsAPI(unittest.TestCase):
 
     def test_upper(self):
@@ -42,7 +41,6 @@ class TestNetflixShowsAPI(unittest.TestCase):
         data = {"show_id": 11229988}
         response = requests.delete(url, data=data)
         self.assertEqual(response.status_code, 201)
-
 
 if __name__ == '__main__':
     unittest.main()
